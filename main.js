@@ -2352,8 +2352,8 @@ teleporter.prototype.update = function(){
         this.hitBox.x + this.hitBox.width > this.game.player.hitBox.x && 
         this.hitBox.y < this.game.player.hitBox.y + this.game.player.hitBox.height &&
         this.hitBox.height + this.hitBox.y > this.game.player.hitBox.y) { 
-            this.game.ctx.font = "30px Comic Sans MS";
-            this.game.ctx.fillStyle = "red";
+            this.game.ctx.font = "30px Garamond";
+            this.game.ctx.fillStyle = "GoldenRod";
             this.game.ctx.fillText("Press E to advance", this.x, this.y);
             if(this.game.pressedE == 1){
                 this.game.removeEnemies();           
@@ -2385,11 +2385,11 @@ function startText(game) {
 startText.prototype.update = function(){
     if(this.game.clickedTest == true){
         if( Date.now() - this.time > 500){
-            this.game.ctx.font = "30px Comic Sans MS";
-            this.game.ctx.fillStyle = "red";
+            this.game.ctx.font = "bold 30px Garamond";
+            this.game.ctx.fillStyle = "Navy";
             if(Date.now() - this.time > 1000){
-                this.game.ctx.font = "30px Comic Sans MS";
-                this.game.ctx.fillStyle = "blue";
+                this.game.ctx.font = "bold 30px Garamond";
+                this.game.ctx.fillStyle = "GoldenRod";
                 this.time = Date.now();
             }
             
@@ -2404,9 +2404,9 @@ startText.prototype.update = function(){
 startText.prototype.draw = function() {
     if(this.game.clickedTest == true){
         this.game.ctx.fillText("CLICK HERE TO START!", this.x, this.y);
-        this.game.ctx.font = "25px Comic Sans MS";
+        this.game.ctx.font = "bold 25px Garamond";
         this.game.ctx.fillStyle = "black";
-        this.game.ctx.fillText("Controls: W, A, S, D to move    UP, DOWN, LEFT, RIGHT to shoot", this.x - 190 , this.y +300);
+        this.game.ctx.fillText("Controls: W, A, S, D to move    UP, DOWN, LEFT, RIGHT to shoot", this.x - 210 , this.y +300);
     }
 }
 function DeathText(game) {
@@ -2420,10 +2420,10 @@ function DeathText(game) {
 DeathText.prototype.update = function(){
     if(this.game.clickedTest == true){
         if( Date.now() - this.time > 500){
-            this.game.ctx.font = "30px Comic Sans MS";
-            this.game.ctx.fillStyle = "red";
+            this.game.ctx.font = "30px Garamond";
+            this.game.ctx.fillStyle = "GoldenRod";
             if(Date.now() - this.time > 1000){
-                this.game.ctx.font = "30px Comic Sans MS";
+                this.game.ctx.font = "30px Garamond";
                 this.game.ctx.fillStyle = "black";
                 this.time = Date.now();
             }
@@ -2439,7 +2439,7 @@ DeathText.prototype.update = function(){
 DeathText.prototype.draw = function() {
     if(this.game.clickedTest == true){
         this.game.ctx.fillText("YOU DIED CLICK HERE TO RESTART!", this.x, this.y);
-        this.game.ctx.font = "25px Comic Sans MS";
+        this.game.ctx.font = "25px Garamond";
         this.game.ctx.fillStyle = "black";
   
     }
@@ -2455,11 +2455,11 @@ function VictoryText(game) {
 VictoryText.prototype.update = function(){
     if(this.game.clickedTest == true){
         if( Date.now() - this.time > 500){
-            this.game.ctx.font = "30px Comic Sans MS";
-            this.game.ctx.fillStyle = "blue";
+            this.game.ctx.font = "30px Garamond";
+            this.game.ctx.fillStyle = "Navy";
             if(Date.now() - this.time > 1000){
-                this.game.ctx.font = "30px Comic Sans MS";
-                this.game.ctx.fillStyle = "green";
+                this.game.ctx.font = "30px Garamond";
+                this.game.ctx.fillStyle = "GoldenRod";
                 this.time = Date.now();
             }
             
@@ -2474,8 +2474,8 @@ VictoryText.prototype.update = function(){
 VictoryText.prototype.draw = function() {
     if(this.game.clickedTest == true){
         this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x, this.y);
-        this.game.ctx.font = "25px Comic Sans MS";
-        this.game.ctx.fillStyle = "blue";
+        this.game.ctx.font = "25px Garamond";
+        this.game.ctx.fillStyle = "purple";
   
     }
 }
@@ -2490,11 +2490,11 @@ function scoreText(game) {
 scoreText.prototype.update = function(){
     if(this.game.clickedTest == true){
         if( Date.now() - this.time > 500){
-            this.game.ctx.font = "30px Comic Sans MS";
-            this.game.ctx.fillStyle = "red";
+            this.game.ctx.font = "30px Garamond";
+            this.game.ctx.fillStyle = "GoldenRod";
             if(Date.now() - this.time > 1000){
-                this.game.ctx.font = "30px Comic Sans MS";
-                this.game.ctx.fillStyle = "blue";
+                this.game.ctx.font = "30px Garamond";
+                this.game.ctx.fillStyle = "Navy";
                 this.time = Date.now();
             }
             
