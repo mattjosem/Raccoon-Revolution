@@ -42,8 +42,8 @@ GameEngine.prototype.init = function (ctx) {
     this.pressedE = 0;
     this.clickedTest = true;
     this.started = false;
-    this.ctx.font = "30px Comic Sans MS";
-    this.ctx.fillStyle = "blue";
+    this.ctx.font = "30px Garamond";
+    this.ctx.fillStyle = "Navy";
 
     this.keyPress["up"] = false;
     this.keyPress["down"] = false;
