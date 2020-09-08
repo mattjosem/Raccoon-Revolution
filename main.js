@@ -2483,7 +2483,7 @@ function scoreText(game) {
     this.game = game;
     this.ctx = game.ctx;
     this.time = Date.now();
-    this.x = this.ctx.canvas.clientWidth -270;
+    this.x = this.ctx.canvas.clientWidth -220;
     this.y = 30;
 }
 
