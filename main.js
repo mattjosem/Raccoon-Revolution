@@ -2403,7 +2403,7 @@ startText.prototype.update = function(){
 
 startText.prototype.draw = function() {
     if(this.game.clickedTest == true){
-        this.game.ctx.fillText("CLICK HERE TO START!", this.x, this.y);
+        this.game.ctx.fillText("CLICK HERE TO START!", this.x, this.y + 50);
         this.game.ctx.font = "bold 25px Garamond";
         this.game.ctx.fillStyle = "black";
         this.game.ctx.fillText("Controls: W, A, S, D to move    UP, DOWN, LEFT, RIGHT to shoot", this.x - 210 , this.y +300);
@@ -2473,7 +2473,7 @@ VictoryText.prototype.update = function(){
 
 VictoryText.prototype.draw = function() {
     if(this.game.clickedTest == true){
-        this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x - 90, this.y + 70);
+        this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x - 75, this.y + 60);
         this.game.ctx.font = "25px Garamond";
         this.game.ctx.fillStyle = "Navy";
   
