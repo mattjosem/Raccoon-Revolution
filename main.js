@@ -2353,7 +2353,7 @@ teleporter.prototype.update = function(){
         this.hitBox.y < this.game.player.hitBox.y + this.game.player.hitBox.height &&
         this.hitBox.height + this.hitBox.y > this.game.player.hitBox.y) { 
             this.game.ctx.font = "30px Garamond";
-            this.game.ctx.fillStyle = "GoldenRod";
+            this.game.ctx.fillStyle = "Pink";
             this.game.ctx.fillText("Press E to advance", this.x, this.y);
             if(this.game.pressedE == 1){
                 this.game.removeEnemies();           
@@ -2369,7 +2369,7 @@ teleporter.prototype.draw = function(){
         this.hitBox.x + this.hitBox.width > this.game.player.hitBox.x && 
         this.hitBox.y < this.game.player.hitBox.y + this.game.player.hitBox.height &&
         this.hitBox.height + this.hitBox.y > this.game.player.hitBox.y){
-    this.game.ctx.fillText("Press E to advance", this.x - 100, this.y+300);}
+    this.game.ctx.fillText("Press E to advance", this.x - 80, this.y+100);}
     this.PowerUpAnimation.drawFrame(this.game.clockTick, this.ctx, this.x, this.y);
 
 }
@@ -2438,7 +2438,7 @@ DeathText.prototype.update = function(){
 
 DeathText.prototype.draw = function() {
     if(this.game.clickedTest == true){
-        this.game.ctx.fillText("YOU DIED CLICK HERE TO RESTART!", this.x, this.y);
+        this.game.ctx.fillText("YOU DIED CLICK HERE TO RESTART!", this.x - 90, this.y + 75);
         this.game.ctx.font = "25px Garamond";
         this.game.ctx.fillStyle = "black";
   
@@ -2473,9 +2473,9 @@ VictoryText.prototype.update = function(){
 
 VictoryText.prototype.draw = function() {
     if(this.game.clickedTest == true){
-        this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x, this.y);
+        this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x - 75, this.y + 60);
         this.game.ctx.font = "25px Garamond";
-        this.game.ctx.fillStyle = "purple";
+        this.game.ctx.fillStyle = "Navy";
   
     }
 }
@@ -2483,18 +2483,18 @@ function scoreText(game) {
     this.game = game;
     this.ctx = game.ctx;
     this.time = Date.now();
-    this.x = this.ctx.canvas.clientWidth -220;
+    this.x = this.ctx.canvas.clientWidth -270;
     this.y = 30;
 }
 
 scoreText.prototype.update = function(){
     if(this.game.clickedTest == true){
         if( Date.now() - this.time > 500){
-            this.game.ctx.font = "30px Garamond";
-            this.game.ctx.fillStyle = "GoldenRod";
+            this.game.ctx.font = "28px Garamond";
+            this.game.ctx.fillStyle = "Pink";
             if(Date.now() - this.time > 1000){
-                this.game.ctx.font = "30px Garamond";
-                this.game.ctx.fillStyle = "Navy";
+                this.game.ctx.font = "28px Garamond";
+                this.game.ctx.fillStyle = "Pink";
                 this.time = Date.now();
             }
             
@@ -2507,7 +2507,7 @@ scoreText.prototype.update = function(){
 }
 
 scoreText.prototype.draw = function() {
-        this.game.ctx.fillText("SCORE:  " + this.game.score, this.x, this.y);
+        this.game.ctx.fillText("SCORE:  " + this.game.score, this.x - 50, this.y);
 }
 
 function FourTurret(game, sprite, xLoc, yLoc) {
