@@ -2473,7 +2473,7 @@ VictoryText.prototype.update = function(){
 
 VictoryText.prototype.draw = function() {
     if(this.game.clickedTest == true){
-        this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x - 75, this.y + 60);
+        this.game.ctx.fillText("YOU WIN CLICK HERE TO RESTART!", this.x - 90, this.y + 70);
         this.game.ctx.font = "25px Garamond";
         this.game.ctx.fillStyle = "Navy";
   
