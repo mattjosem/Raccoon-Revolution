@@ -2483,18 +2483,18 @@ function scoreText(game) {
     this.game = game;
     this.ctx = game.ctx;
     this.time = Date.now();
-    this.x = this.ctx.canvas.clientWidth -220;
+    this.x = this.ctx.canvas.clientWidth -270;
     this.y = 30;
 }
 
 scoreText.prototype.update = function(){
     if(this.game.clickedTest == true){
         if( Date.now() - this.time > 500){
-            this.game.ctx.font = "28px Garamond";
+            this.game.ctx.font = "30px Garamond";
             this.game.ctx.fillStyle = "Pink";
             if(Date.now() - this.time > 1000){
-                this.game.ctx.font = "28px Garamond";
-                this.game.ctx.fillStyle = "Pink";
+                this.game.ctx.font = "30px Garamond";
+                this.game.ctx.fillStyle = "Navy";
                 this.time = Date.now();
             }
             
